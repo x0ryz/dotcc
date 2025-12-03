@@ -1,5 +1,4 @@
-import React from 'react';
-import { motion } from "framer-motion"; // Зверни увагу: зазвичай імпорт з 'framer-motion'
+import { motion } from 'motion/react';
 import { Cpu, Globe } from 'lucide-react';
 import Card from '../ui/Card';
 import { SKILLS, LANGUAGES, SOFT_SKILLS } from '../../data/content';
@@ -7,7 +6,7 @@ import { containerVariants, itemVariants } from '../../utils/animations';
 
 const Skills = ({ className }) => {
   return (
-    <Card className={`${className} flex flex-col bg-white overflow-y-auto custom-scrollbar`}>
+    <Card className={`${className} flex flex-col bg-white`}>
       
       {/* --- SECTION 1: TECH STACK --- */}
       <div className="flex items-center gap-2 border-b-2 border-black pb-2 mb-3 sticky top-0 bg-white pt-1">
@@ -43,7 +42,7 @@ const Skills = ({ className }) => {
       </motion.div>
 
       {/* --- SECTION 2: GENERAL --- */}
-      <div className="flex items-center gap-2 border-b-2 border-black pb-2 mb-3 mt-8">
+      <div className="flex items-center gap-2 border-b-2 border-black pb-2 mb-3 mt-6">
         <Globe size={20} />
         <h2 className="font-black uppercase text-lg">General</h2>
       </div>

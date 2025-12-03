@@ -23,7 +23,7 @@ export const SOCIAL_LINKS = [
   },
   { 
     name: "Telegram", 
-    url: "#", 
+    url: "https://t.me/x0ryz", 
     icon: Send, 
     hoverColor: "hover:bg-[#229ED9]" 
   }
@@ -54,7 +54,6 @@ export const SKILLS = [
 
 export const SOFT_SKILLS = ["Teamwork", "Problem Solving", "Adaptability"];
 
-// Нова структура для мов
 export const LANGUAGES = [
   { name: "Ukrainian", level: "Native", score: "Native" },
   { name: "English", level: "B1 / Intermediate", score: "B1" }
@@ -65,18 +64,24 @@ export const PROJECTS = [
     title: "Qwerty E-commerce", 
     icon: ShoppingCart,
     desc: "Robust store backend with Stripe payments, async tasks (Celery/RabbitMQ) and caching.", 
-    tags: ["Django", "Celery", "Docker", "Stripe"] 
+    tags: ["Django", "Celery", "Docker", "Stripe"],
+    github: "https://github.com/x0ryz/qwerty", // Додайте лінки
+    demo: "https://qwerty.x0ryz.cc" // Або посилання, якщо є
   },
   { 
     title: "Finance Tracker API", 
     icon: LineChart,
     desc: "High-performance expense tracking system with JWT auth and complex data aggregation.", 
-    tags: ["FastAPI", "SQLAlchemy", "Pydantic"] 
+    tags: ["FastAPI", "SQLAlchemy", "Pydantic"],
+    github: "https://github.com/x0ryz/okane",
+    demo: "https://okane.x0ryz.cc/docs" // Наприклад, Swagger
   },
   { 
     title: "University Schedule Bot", 
     icon: Send,
     desc: "Telegram bot for students to view real-time class schedules and university updates.", 
-    tags: ["Aiogram", "PostgreSQL", "AsyncIO"] 
+    tags: ["Aiogram", "PostgreSQL", "AsyncIO"],
+    github: "https://github.com/x0ryz/uni-schedule-bot",
+    demo: "https://t.me/your_bot_username"
   }
 ];

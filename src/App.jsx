@@ -17,13 +17,13 @@ export default function App() {
 
       {/* Grid Layout Configuration */}
       <motion.div
-        className="grid w-full max-w-[1200px] h-full max-h-[950px] gap-4 grid-cols-[1.3fr_1fr_1fr_1.75fr] grid-rows-[0.3fr_0.4fr_1fr_0.7fr_1fr]"
+        className="grid w-full max-w-[1200px] h-full max-h-[900px] gap-4 grid-cols-[1.3fr_1fr_1fr_1.75fr] grid-rows-[0.3fr_0.4fr_1fr_0.7fr_1fr]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
 
-        <Card className="col-span-4 flex flex-row justify-between items-center px-8 py-8 bg-[#ffde59]">
+        <Card className="col-span-4 flex flex-row justify-between items-center px-8 py-6 bg-[#ffde59]">
           <div className="flex flex-col">
             <h1 className="text-4xl font-black uppercase tracking-tighter">{PERSONAL_INFO.name}</h1>
             <div className="flex items-center gap-2 mt-1">
@@ -99,7 +99,10 @@ export default function App() {
         </Card>
 
         {/* 8. Contact / Email */}
-        <Card className="col-span-2 col-start-3 row-start-5 bg-[#7afcff] flex items-center justify-between px-8 hover:bg-[#5ce1e6] cursor-pointer transition-colors group">
+        <Card 
+          className="col-span-2 col-start-3 row-start-5 bg-[#7afcff] flex items-center justify-between px-8 hover:bg-[#5ce1e6] cursor-pointer transition-colors group"
+          onClick={() => window.location.href = `mailto:${PERSONAL_INFO.email}`}
+        >
           <div className="flex flex-col">
             <span className="text-xs font-bold uppercase mb-1">Open to collaboration?</span>
             <span className="text-2xl font-black group-hover:underline">{PERSONAL_INFO.email}</span>
