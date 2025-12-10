@@ -81,7 +81,7 @@ export const PROJECTS = [
     icon: Send,
     desc: "Telegram bot for students to view real-time class schedules and university updates.", 
     tags: ["Aiogram", "PostgreSQL", "AsyncIO"],
-    github: "https://github.com/x0ryz/uni-schedule-bot",
-    demo: "https://t.me/your_bot_username"
+    github: "https://github.com/x0ryz/uni-schedule-app",
+    demo: "https://t.me/lntu_study_bot"
   }
 ];

@@ -39,8 +39,7 @@ export default function App() {
           whileHover={{ scale: 1.05, rotate: -2 }}
           className="border-2 border-black bg-gray-200 flex items-center justify-center text-xs font-bold uppercase tracking-widest row-span-2 row-start-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden group cursor-pointer"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-100 to-gray-400 opacity-50"></div>
-          <span className="z-10">YOUR PHOTO</span>
+          <img src="./photo.webp" alt="" />
         </motion.div>
 
         {/* 3. Socials Component */}
