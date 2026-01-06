@@ -5,5 +5,10 @@ services:
       dockerfile: Dockerfile
     container_name: dotcc
     restart: unless-stopped
-    ports:
-      - 3000:80
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+      start_interval: 5s
